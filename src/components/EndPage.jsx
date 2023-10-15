@@ -17,7 +17,7 @@ const EndPage = () => {
                 </div>
                 <div className='flex justify-center items-center text-black p-2'>
                     <Icon icon="icon-park-twotone:enquire" width={64} color='skyblue'/>
-                    <p className='text-3xl text-center'><b>CONNEC</b> with the resources to meet your business needs</p>
+                    <p className='text-3xl text-center'><b>CONNECT</b> with the resources to meet your business needs</p>
                 </div>
                 <div className='flex justify-center items-center text-black p-2'>
                     <Icon icon="icon-park-twotone:table-report" width={64} color='skyblue'/>
