@@ -4,14 +4,14 @@ const SearchResult = ({user}) => {
     console.log(user && user.image);
   return (
     <div className='min-w-[90%] min-h-screen flex min-h-screen max-w-full justify-center'>
-    <div className='max-w-full min-h-screen p-6 flex flex-col justify-center items-center lg:flex-row'>
-        <div className='max-w-full flex flex-col justify-start p-6 lg:max-w-[30%]'>
+    <div className='max-w-full min-h-screen p-6 flex flex-col justify-center items-start lg:flex-row'>
+        <div className='max-w-full flex flex-col justify-start p-8 lg:max-w-[30%]'>
             <div className='text-4xl text-black '>
                     <p className='font-bold'>{user && user.name}</p>
                     <p className='text-xl my-4'>I am here to provide my expertise in accounting and finance, which includes financial statements, economics, and auditing, all to assist you effectively</p>
                     <p className='text-2xl my-4'>{user && user.rating} ({user && user.reviewCount})</p>
             </div>
-            <div className='bg-white text-black flex flex-col items-center shadow-custom bg-white rounded-2xl w-full h-[20%] py-6'>
+            <div className='bg-white text-black flex flex-col items-center shadow-custom bg-white rounded-2xl w-full min-h-[20%] py-6'>
                 <div className='flex justify-between p-6 w-full'>
                     <p>{user && user.taskComplexity}</p>
                     <p>{user && user.price}</p>
@@ -34,7 +34,8 @@ const SearchResult = ({user}) => {
 
 
         <div className='min-w-[50%] max-h-full min-h-screen p-8 lg:min-h-auto'>
-            <div className={`bg-[url(${user && user.image})] flex flex-col max-w-full min-h-[40%] bg-red-400 bg-no-repeat bg-cover bg-center rounded-2xl p-4`}>
+            <div className={`bg-[url(${user.image})] flex flex-col max-w-full min-h-[400px] bg-no-repeat bg-cover bg-center rounded-2xl p-4 `}>
+                <img src={user && user.image} alt="" width='750' className='bg-cover' />
             </div>
             <div className='min-w-full flex flex-col justify-start items-start text-black'>
                 <div className='flex flex-col my-6 w-full'>

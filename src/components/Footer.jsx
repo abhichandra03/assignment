@@ -2,6 +2,7 @@ import React from 'react'
 import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import {RxDividerHorizontal} from "react-icons/rx"
 import {BiLogoLinkedin} from "react-icons/bi"
+import footerlogo from "/src/assets/footerLogo.png"
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
             
             <div className='py-6 my-6 px-10 ml-10 min-h-full'>
 
-            <img src="src/assets/footerLogo.png" alt=""/>
+            <img src={footerlogo} alt=""/>
             <p className='text-white text-lg'>India's first platform dedicated to simplifying partner search</p>
             </div>
             

@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsChevronDown} from "react-icons/bs"
+import logo from "/src/assets/logo.png"
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <div className='w-1/2 grid grid-cols-2  justify-between items-center lg:flex flex-row '>
             <div className='flex flex-row  py-1 text-black font-bold'>
                 <div className='min-w-full min-h-full object-conatin'>
-                <img src='src/assets/logo.png' alt="" className='min-w-full min-h-full'/>
+                <img src={logo} alt="" className='min-w-full min-h-full'/>
                 </div>
             </div>
             <div className='flex flex-row px-4 py-1 text-black font-bold justify-center items-center'>

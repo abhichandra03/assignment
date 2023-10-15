@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     async function getData() {
 
-      const res = await fetch("http://localhost:3000/accountants")
+      const res = await fetch("https://mock-api-zi6h.onrender.com/accountants")
       const data = await res.json()
     if(!res.ok){
       throw new Error("failed")

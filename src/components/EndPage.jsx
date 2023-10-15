@@ -1,6 +1,8 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
-import { RxDividerHorizontal } from 'react-icons/rx';
+import student from "/src/assets/Student.png"
+import teacher from "/src/assets/Teacher.png"
+
 
 const EndPage = () => {
   return (
@@ -41,11 +43,11 @@ const EndPage = () => {
                     <p className='bg-[#DDF3FF] text-lg w-fit p-2 items-end my-2 rounded-xl rounded-bl-none'>Oh, that's great.</p>
                 </div>
                 <div className='absolute inset-x-0 -bottom-16'>
-                    <img src="src/assets/Teacher.png" alt="" />
+                    <img src={teacher} alt="" />
             </div>
             </div>
             <div className='w-1/2 h-full justify-center p-10 relative'>
-                <img src="src/assets/Student.png" alt="" />
+                <img src={student} alt="" />
             </div>
         </div>
     </div>

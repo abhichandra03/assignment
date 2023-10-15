@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import SearchResult from './SearchResult';
+import rightPanel from '/src/assets/rightPanel.png'
+import homeBg from "/src/assets/homeBg.png"
 
 const Home = ({setMatchFound, setUser, accountants}) => {
   const [searchText, setSearchText] = useState("");
@@ -37,10 +38,10 @@ const Home = ({setMatchFound, setUser, accountants}) => {
         
         
         <div className='w-1/3 h-[100%] flex justify-center items-center z-10'>
-            <img src="src/assets/rightPanel.png" alt="" />
+            <img src={rightPanel} alt="" />
         </div>
         <div className='absolute bottom-0 w-full'>
-          <img src="/src/assets/homeBg.png" alt="" className='w-full'/>
+          <img src={homeBg} alt="" className='w-full'/>
         </div>
     </div> 
     
