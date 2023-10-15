@@ -16,6 +16,8 @@ const Home = ({setMatchFound, setUser, accountants}) => {
     ))
     if(found != undefined){
       setMatchFound(true)
+    }else{
+      alert("No matches found")
     }
     setUser(found);
   }
@@ -29,7 +31,11 @@ const Home = ({setMatchFound, setUser, accountants}) => {
             <p className='text-6xl font-bold my-2'>Find <span>Partners</span> (CAs) available online</p>
             <p className='text-lg text-[#616161] my-6'><b>CONNECT</b> with us where your services are listed and visible to a myriad of businesses seeking CA’s for compliance support</p>
             <div className='flex flex-row w-[90%] h-[70px] justify-center items-center'>
-                <input placeholder='Search by name' className='w-4/5 h-full rounded-lg bg-white text-[#BFBFBF] p-6 font-bold' onChange={(e)=> setSearchText(e.target.value)}></input>
+                <input placeholder='Search by name' className='w-4/5 h-full rounded-lg bg-white text-[#BFBFBF] p-6 font-bold' 
+                onChange={(e)=> setSearchText(e.target.value)}
+                onKeyDown={(e) => {if(e.key==="Enter")handleSearch()}} >
+
+                </input>
                 <button className='w-1/5 h-full rounded-lg bg-[#0076CE] text-white' onClick={handleSearch}>Search</button>
         </div>
         </div>
