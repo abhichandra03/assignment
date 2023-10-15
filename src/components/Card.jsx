@@ -5,8 +5,8 @@ const Card = ({item}) => {
   return (
     <div className=' p-10 xl:p-20 '>
         
-            <div className='bg-white text-black flex flex-col items-center shadow-custom bg-white rounded-2xl w-full h-full p-6'>
-                
+            <div className='relative bg-white text-black flex flex-col items-center shadow-custom bg-white rounded-2xl w-full h-full p-6'>
+                <p className='absolute -left-2 Footer -top-2  w-8 h-10 rounded-lg flex justify-center items-center text-white font-extrabold'>{item.id}</p>
             <div className='flex flex-col items-center justify-center p-4'>
                     <p className='font-bold text-2xl text-center'>{item.heading}</p>
                     <p className='text-center text-xl p-2'>{item.body}</p>
